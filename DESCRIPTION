@@ -1,0 +1,10 @@
+Package: Genesets
+Title: Genesets and functionality to read them into R
+Version: 0.1.0.0
+Authors@R: person("Maarten", "Slagter", email = "slagter.maarten@gmail.com", role = c("aut", "cre"))
+Description: Gene set compendium
+Depends: R (>= 3.0.0), dplyr
+License: BSD
+LazyData: true
+Imports: readr
+Suggests: testthat
