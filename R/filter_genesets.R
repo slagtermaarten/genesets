@@ -22,7 +22,7 @@ read_gmt <- function(file, progress = interactive()) {
 #'
 #'
 find_gmt <- function(pattern = '*', type = 'symbols') {
-  list.files(gmt_files, pattern = sprintf('%s.*%s\\.gmt', pattern, type),
+  list.files(gmt_file_locs, pattern = sprintf('%s.*%s\\.gmt', pattern, type),
     full.names = T)
 }
 
