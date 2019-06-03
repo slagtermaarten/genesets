@@ -1,8 +1,13 @@
 gmt_file_locs <- c(file.path('~/libs/genesets/data-raw'))
+
 for (d in gmt_file_locs) {
-  print(d)
   stopifnot(dir.exists(d))
 }
+
+cat(paste(
+    'genesets: looking for .gmt files in', 
+    paste(gmt_file_locs, collapse = ', '), 
+    '\n'))
 
 
 #' Read in a .gmt file
